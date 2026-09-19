@@ -28,8 +28,7 @@
     <header class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#home" class="flex items-center space-x-3 group">
-                              <img src="vikalp-logo.avif" alt="Vikalp Wellness Logo" class="w-11 h-11 object-contain rounded-xl shadow-sm">
-
+               <img src="vikalp-logo.avif" alt="Vikalp Wellness Logo" class="w-11 h-11 object-contain rounded-xl shadow-sm">
                 <div class="flex flex-col">
                     <span class="text-xl font-bold text-slate-900 tracking-wide leading-none group-hover:text-teal-600 transition">Vikalp Wellness</span>
                     <span class="text-[10px] font-bold text-teal-600 tracking-wider uppercase mt-1">Physiotherapy & Rehabilitation Clinic</span>
@@ -40,7 +39,6 @@
                 <a href="#leadership" class="text-slate-600 hover:text-teal-600 transition">Clinical Directors</a>
                 <a href="#services" class="text-slate-600 hover:text-teal-600 transition">Treatments & Therapies</a>
                 <a href="#why-choose-us" class="text-slate-600 hover:text-teal-600 transition">Quality Benchmarks</a>
-                <a href="#contact" class="text-slate-600 hover:text-teal-600 transition">Contact</a>
             </nav>
             <div class="flex items-center space-x-4">
                 <a href="tel:8009831555" class="p-2 bg-slate-100 rounded-full text-teal-600 hover:bg-teal-50 lg:hidden">
@@ -58,6 +56,7 @@
         
         <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-7 space-y-6">
+
                 <div class="inline-flex items-center space-x-2 bg-teal-500/20 text-teal-300 border border-teal-500/30 text-xs font-semibold px-3 py-1.5 rounded-full uppercase tracking-wider">
                     <i class="fa-solid fa-award"></i>
                     <span>Justdial Users' Choice 2026 Winner</span>
@@ -69,9 +68,15 @@
                     At Vikalp Wellness, we combine global diagnostic protocols with cutting-edge innovations to restore movement, alleviate pain, and optimize functional independence. Established in 2019, our clinic serves as Lucknow's premier destination for integrated medical rehabilitation.
                 </p>
                 <div class="pt-4 flex flex-wrap gap-4">
-                    <a href="#appointment" class="bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-6 py-3.5 rounded-xl transition shadow-lg shadow-teal-500/20 text-sm">
+                    <a href="#appointment" class="bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-700 font-semibold px-6 py-3.5 rounded-xl transition text-sm">
                         Request An Appointment
                     </a>
+
+<a href="testimonials.html" class="bg-teal-600 hover:bg-teal-500 text-white font-bold px-6 py-3.5 rounded-xl transition shadow-lg shadow-teal-900/50 text-sm inline-flex items-center space-x-2">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>Patient Testimonials</span>
+    </a>
+
                     <a href="#services" class="bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-700 font-semibold px-6 py-3.5 rounded-xl transition text-sm">
                         Explore Specialized Care
                     </a>
@@ -176,7 +181,17 @@
             </div>
         </div>
     </section>
-
+    
+<!-- Meet Our Staff Button Section -->
+<div class="bg-slate-100 pb-12 text-center">
+    <div class="container mx-auto px-6">
+        <a href="staff.html" class="inline-flex items-center space-x-3 bg-teal-600 hover:bg-teal-700 text-white font-bold px-8 py-4 rounded-xl transition shadow-md shadow-teal-100 text-sm tracking-wide">
+            <i class="fa-solid fa-users-rectangle text-teal-200"></i>
+            <span>Meet Our Respected Healthcare Staff Members</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+    </div>
+</div>
 
     <!-- Comprehensive Treatments Menu (Styled Like High-End Treatment Portals) -->
     <section id="services" class="py-20 bg-white">
@@ -273,6 +288,19 @@
         </div>
     </section>
 
+
+<!-- Testimonials Section Link -->
+ <div class="bg-slate-950 pb-16 text-center">
+     <div class="container mx-auto px-6">
+         <a href="testimonials.html" class="inline-flex items-center space-x-3 bg-teal-600 hover:bg-teal-500 text-white font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-teal-900/50 text-sm tracking-wide">
+             <i class="fa-solid fa-heart-pulse text-teal-200"></i>
+             <span>View Patient Testimonials & Recovery Proof</span>
+             <i class="fa-solid fa-arrow-right text-xs"></i>
+         </a>
+     </div>
+ </div>
+
+ 
     <!-- Consultation & Map Section -->
     <section id="appointment" class="py-20 bg-slate-50">
         <div class="container mx-auto px-6 grid lg:grid-cols-12 gap-12 max-w-6xl">
@@ -325,36 +353,74 @@
                 <h3 class="text-xl font-bold text-slate-900 mb-2">Request Rehabilitation Scheduling</h3>
                 <p class="text-slate-500 text-xs mb-6">Fill out your baseline clinical issue below. Our scheduling coordinator will confirm your calendar allocation within 1 hour.</p>
                 
-                <form onsubmit="alert('Scheduling Request Logged Successfully. The clinical board will revert back on your phone line within 60 minutes.'); return false;" class="space-y-4 text-xs font-medium text-slate-700">
-                    <div class="grid sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-slate-600 mb-1.5">Patient Full Name</label>
-                            <input type="text" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white transition text-sm">
-                        </div>
-                        <div>
-                            <label class="block text-slate-600 mb-1.5">Mobile Contact Line</label>
-                            <input type="tel" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white transition text-sm">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-slate-600 mb-1.5">Target Treatment Track</label>
-                        <select class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white transition text-sm">
-                            <option>Chiropractic Care & Manual Joint Adjustments</option>
-                            <option>Neurological Rehabilitation (Stroke, Spinal, Hemiplegia)</option>
-                            <option>Laser Therapy & Electrotherapy Modalities</option>
-                            <option>Indiba Deep Beauty & Structural Aesthetic Care</option>
-                            <option>Sports Taping, Cupping & Muscle Re-alignment</option>
-                            <option>Slimming, Coolsculpting & Weight Management Track</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-slate-600 mb-1.5">Preferred Allocation Date</label>
-                        <input type="date" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white transition text-sm">
-                    </div>
-                    <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 px-4 rounded-xl transition text-sm tracking-wide shadow-md shadow-teal-100 mt-2">
-                        Lock Consultation Session
-                    </button>
-                </form>
+
+<form onsubmit="sendToWhatsApp(event);" class="space-y-4 text-xs font-medium text-slate-700">
+    <input type="hidden" name="_next" value="https://vikalpwellness.com/index.html?submitted=true">
+    <div>
+        <label class="block text-slate-600 mb-1.5">Patient Full Name</label>
+        <input type="text" id="pName" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl ...">
+    </div>
+    <div>
+        <label class="block text-slate-600 mb-1.5">Mobile Contact Line</label>
+        <input type="tel" id="pPhone" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl ...">
+    </div>
+    <div>
+        <label class="block text-slate-600 mb-1.5">Target Treatment Track</label>
+        <select id="pTreatment" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl ...">
+            <option>Chiropractic Care & Manual Joint Adjustments</option>
+            <option>Neurological Rehabilitation (Stroke, Spinal, Hemiplegia)</option>
+            <option>Laser Therapy & Electrotherapy Modalities</option>
+            <option>Indiba Deep Beauty & Structural Aesthetic Care</option>
+            <option>Sports Taping, Cupping & Muscle Re-alignment</option>
+            <option>Slimming, Coolsculpting & Weight Management Track</option>
+        </select>
+    </div>
+    <div>
+        <label class="block text-slate-600 mb-1.5">Preferred Allocation Date</label>
+        <input type="date" id="pDate" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl ...">
+    </div>
+    <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 px-4 rounded-xl transition text-sm">
+        Lock Consultation Session
+    </button>
+</form>
+
+<script>
+function sendToWhatsApp(event) {
+    event.preventDefault();
+    
+    // Get form field values
+    const name = document.getElementById('pName').value;
+    const phone = document.getElementById('pPhone').value;
+    const treatment = document.getElementById('pTreatment').value;
+    const date = document.getElementById('pDate').value;
+
+    // 1. Send data to Email in the background using fetch (FormSubmit)
+    const formData = new FormData();
+    formData.append("Patient_Name", name);
+    formData.append("Mobile_Number", phone);
+    formData.append("Treatment_Track", treatment);
+    formData.append("Preferred_Date", date);
+    formData.append("_subject", "New Consultation Request - Vikalp Wellness");
+    formData.append("_captcha", "false");
+
+    fetch("https://formsubmit.co/ajax/contact@vikalpwellness.co.in", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => console.log("Email sent successfully", data))
+    .catch(error => console.error("Error sending email", error));
+
+    // 2. Open WhatsApp chat with pre-filled details
+    const whatsappNumber = "918009831555"; // Your clinic WhatsApp number
+    const message = `*New Consultation Request*%0A*Name:* ${name}%0A*Mobile:* ${phone}%0A*Treatment:* ${treatment}%0A*Date:* ${date}`;
+    
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+    
+    // Optional: Reset form fields or show success alert
+    alert('Consultation request logged! Redirecting to WhatsApp and sending confirmation email.');
+}
+</script>
             </div>
         </div>
     </section>
